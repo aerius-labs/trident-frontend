@@ -1,8 +1,9 @@
 import Container from '@/components/container';
+import PageContainer from '@/components/pageContainer';
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-4 bg-primary pb-10 pt-4'>
+    <PageContainer>
       <Container>
         <div className='col-span-12 h-12 bg-black'></div>
       </Container>
@@ -14,6 +15,6 @@ export default function Home() {
           <div className='col-span-6 h-auto min-h-[770px] rounded-2xl bg-secondary'></div>
         </Container>
       </main>
-    </div>
+    </PageContainer>
   );
 }

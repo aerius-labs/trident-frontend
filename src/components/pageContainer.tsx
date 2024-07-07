@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { cn } from '@/lib/utils';
-const Container = ({
+const PageContainer = ({
   className,
   children,
 }: {
@@ -11,7 +11,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        `mx-10 grid min-w-[1140px] max-w-[1359px] grid-cols-12 gap-4 ${className}`
+        `mx-auto h-full min-h-screen gap-4 space-y-4 bg-primary pb-10 pt-4 ${className}`
       )}
     >
       {children}
@@ -19,4 +19,4 @@ const Container = ({
   );
 };
 
-export default Container;
+export default PageContainer;
