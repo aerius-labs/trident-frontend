@@ -21,6 +21,11 @@ const config = {
       colors: {
         primary: '#101016',
         secondary: '#131A24',
+        primaryForeground: '#F0F6FB',
+        secondaryForeground: '#181E28',
+        accent: '#7892B7',
+        darkBlue: '#1162D4',
+        lightBlue: '#1D97FE',
       },
       keyframes: {
         'accordion-down': {
@@ -31,6 +36,10 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+      },
+      backgroundImage: {
+        blueGradient:
+          'linear-gradient(83.3deg, #1164D7 10.74%, #1D96FD 86.38%)',
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
