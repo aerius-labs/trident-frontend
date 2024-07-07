@@ -10,13 +10,13 @@ const Container = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <Slot
+    <div
       className={cn(
         `mx-10 grid min-w-[1140] max-w-[1359] grid-cols-12 gap-4 ${className}`
       )}
     >
       {children}
-    </Slot>
+    </div>
   );
 };
 
