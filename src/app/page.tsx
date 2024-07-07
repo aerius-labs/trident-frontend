@@ -1,11 +1,12 @@
 import Container from '@/components/container';
 import PageContainer from '@/components/pageContainer';
+import AuroConnect from '@/hooks/AuroConnect';
 
 export default function Home() {
   return (
     <PageContainer>
       <Container>
-        <div className='col-span-12 h-12 bg-black'></div>
+        <AuroConnect />
       </Container>
       <main className='flex flex-col gap-4'>
         <Container className='col-span-12 h-[74px] rounded-2xl bg-secondary'></Container>
