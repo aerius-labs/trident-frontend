@@ -11,7 +11,7 @@ const PageContainer = ({
   return (
     <div
       className={cn(
-        `mx-auto h-full min-h-screen gap-4 space-y-4 bg-primary pb-10 pt-4 ${className}`
+        `mx-auto min-h-screen max-w-[1379px] space-y-4 bg-primary pb-10 pt-4 ${className}`
       )}
     >
       {children}

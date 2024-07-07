@@ -11,7 +11,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        `mx-10 grid min-w-[1140px] max-w-[1359px] grid-cols-12 gap-4 ${className}`
+        `mx-10 grid max-w-[1359px] grid-cols-12 gap-4 overflow-x-scroll lg:min-w-[1024px] ${className}`
       )}
     >
       {children}
