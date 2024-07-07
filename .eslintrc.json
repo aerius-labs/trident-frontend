@@ -1,3 +1,49 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "node": true,
+    "es2021": true,
+    "browser": true
+  },
+  "globals": {
+    "React": true
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": { "jsx": true }
+  },
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "import/prefer-default-export": "warn",
+    "react/function-component-definition": "off",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "sort-imports": "off",
+    "no-console": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react/prop-types": [
+      2,
+      {
+        "ignore": [
+          "className",
+          "variant",
+          "size",
+          "sideOffset",
+          "checked",
+          "value"
+        ]
+      }
+    ]
+  }
 }
