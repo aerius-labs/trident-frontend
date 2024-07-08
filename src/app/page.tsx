@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 
+import BidAskSection from '@/components/bidAskSection';
 import TradingViewWidget from '@/components/charts';
 import Container from '@/components/container';
 import PageContainer from '@/components/pageContainer';
@@ -70,7 +71,9 @@ export default function Home() {
           <div className='col-span-3 flex min-h-[770px] flex-col items-center justify-center rounded-2xl bg-secondary'>
             <PlaceOrderSection />
           </div>
-          <div className='col-span-3 min-h-[770px] rounded-2xl bg-secondary'></div>
+          <div className='col-span-3 flex h-auto min-h-[770px] flex-col items-center justify-center rounded-2xl bg-secondary'>
+            <BidAskSection />
+          </div>
           <div className='col-span-6 flex max-h-screen min-h-[770px] flex-col rounded-2xl bg-secondary'>
             <div className='min-h-[404px]'>
               <TradingViewWidget />
