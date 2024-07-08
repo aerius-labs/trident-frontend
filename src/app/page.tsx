@@ -4,6 +4,7 @@ import PageContainer from '@/components/pageContainer';
 import AuroConnect from '@/hooks/AuroConnect';
 
 import PlaceOrderSection from '@/components/placeOrderSection';
+import SubHeader from '@/components/subHeader';
 import { WalletStats } from '@/components/walletStats';
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         <AuroConnect />
       </Container>
       <main className='flex flex-col gap-4'>
-        <Container className='col-span-12 h-[74px] rounded-2xl bg-secondary'></Container>
+        <Container className='col-span-12 flex h-[74px] items-center rounded-2xl bg-secondary px-4'>
+          <SubHeader />
+        </Container>
         <Container>
           <div className='col-span-3 flex min-h-[770px] flex-col items-center justify-center rounded-2xl bg-secondary'>
             <PlaceOrderSection />
