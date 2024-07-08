@@ -12,6 +12,7 @@ import {
 import { SpreadTableColumn } from '@/lib/constants';
 
 import { orderBookEnum } from './bidAskSection';
+import { Separator } from './ui/separator';
 
 const SpreadTable = ({
   orderBookType,
@@ -66,7 +67,9 @@ const SpreadTable = ({
                 })}
               </TableRow>
             ))}
-
+            <div className='mb-2'></div>
+            <Separator className='absolute w-72 bg-borderAccent' />
+            <div className='mt-5'></div>
             {sellData?.slice(0, 13).map((row, rowIndex: number) => (
               <TableRow
                 className='rounded-lg border-none hover:bg-secondary'

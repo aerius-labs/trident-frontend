@@ -59,7 +59,7 @@ const PlaceOrderSection = () => {
           </div>
           <div className='grid gap-3'>
             <Label
-              htmlFor='size'
+              htmlFor='leverage'
               className='w-auto text-xs font-medium tracking-[0.07px] text-textAccent'
             >
               Leverage
@@ -181,7 +181,7 @@ const PlaceOrderSection = () => {
           </div>
           <div className='grid gap-3'>
             <Label
-              htmlFor='size'
+              htmlFor='leverage'
               className='w-auto text-xs font-medium tracking-[0.07px] text-textAccent'
             >
               Leverage
