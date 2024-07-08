@@ -3,6 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Urbanist } from 'next/font/google';
 
+import { AuthProvider } from '@/hooks/useAuth';
+
 const urbanist = Urbanist({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -17,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`bg-primary ${urbanist.className}`}>{children}</body>
+      <body className={`bg-primary ${urbanist.className}`}>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }

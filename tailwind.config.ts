@@ -26,6 +26,10 @@ const config = {
         accent: '#7892B7',
         darkBlue: '#1162D4',
         lightBlue: '#1D97FE',
+        btnGreen: '#0ECB81',
+        btnRed: '#F6465D',
+        textAccent: '#9CA3AF',
+        borderAccent: '#363A41',
       },
       keyframes: {
         'accordion-down': {

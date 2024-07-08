@@ -5,27 +5,26 @@ import * as React from 'react';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300 hover:opacity-90 active:opacity-80 active:scale-[0.98]',
   {
     variants: {
       variant: {
         default:
-          'bg-slate-900 text-slate-50 hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90',
-        destructive:
-          'bg-red-500 text-slate-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90',
-        outline:
-          'border border-slate-200 bg-white hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50',
+          'bg-blueGradient text-primaryForeground rounded-2xl font-extrabold h-12 text-lg shadow-[0px_2px_2px_0px_#00000040]',
         secondary:
-          'bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80',
-        ghost:
-          'hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50',
-        link: 'text-slate-900 underline-offset-4 hover:underline dark:text-slate-50',
+          'bg-secondary text-primaryForeground border border-borderAccent px-[14px] py-3 rounded-xl font-semibold text-lg shadow-[0px_2px_2px_0px_#00000040]',
+        green:
+          'bg-btnGreen text-primaryForeground  px-8 py-4 rounded-[14px] font-extrabold text-lg',
+        red: 'bg-btnRed text-primaryForeground  px-8 py-4 rounded-[14px] font-extrabold text-lg',
+        outline:
+          'bg-secondary text-primaryForeground outline-1 outline-offset-0 outline-textAccent px-[14px] py-3 rounded-xl font-semibold text-lg shadow-[0px_2px_2px_0px_#00000040]',
+        link: 'text-primaryForeground font-extrabold underline-offset-4 hover:underline hover:text-white h-0 w-0',
+        feat: 'bg-primary text-primaryForeground px-0 py-0 p-0 rounded-md font-semibold text-[8px] border border-textAccent',
       },
       size: {
-        default: 'h-10 px-4 py-2',
-        sm: 'h-9 rounded-md px-3',
-        lg: 'h-11 rounded-md px-8',
-        icon: 'h-10 w-10',
+        default: 'h-12 px-[18px] py-4',
+        lg: 'h-12 w-72',
+        xs: 'p-0 h-6 w-12',
       },
     },
     defaultVariants: {
