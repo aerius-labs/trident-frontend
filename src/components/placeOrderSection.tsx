@@ -19,7 +19,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 const PlaceOrderSection = () => {
   return (
     <div className='flex h-full w-full flex-col items-center justify-start'>
-      <Tabs defaultValue='market' className='flex flex-col gap-3 p-4'>
+      <Tabs defaultValue='market' className='flex w-full flex-col gap-3 p-4'>
         <TabsList className='grid h-auto w-full grid-cols-2 rounded-[9px] bg-primary p-2'>
           <TabsTrigger
             value='market'
