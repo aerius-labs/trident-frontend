@@ -3,12 +3,11 @@ import Image from 'next/image';
 import TradingViewWidget from '@/components/charts';
 import Container from '@/components/container';
 import PageContainer from '@/components/pageContainer';
-import AuroConnect from '@/hooks/AuroConnect';
-
 import PlaceOrderSection from '@/components/placeOrderSection';
 import SubHeader from '@/components/subHeader';
 import { Separator } from '@/components/ui/separator';
 import { WalletStats } from '@/components/walletStats';
+import AuroConnect from '@/hooks/AuroConnect';
 export default function Home() {
   return (
     <PageContainer>
