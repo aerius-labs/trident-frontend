@@ -19,7 +19,9 @@ export default function Home() {
           </div>
           <div className='col-span-3 min-h-[770px] rounded-2xl bg-secondary'></div>
           <div className='col-span-6 flex max-h-screen min-h-[770px] flex-col rounded-2xl bg-secondary'>
-            <TradingViewWidget />
+            <div className='min-h-[404px]'>
+              <TradingViewWidget />
+            </div>
             <WalletStats />
           </div>
         </Container>

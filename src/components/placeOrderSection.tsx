@@ -68,7 +68,7 @@ const PlaceOrderSection = () => {
           </div>
           <div className='flex h-auto flex-row items-start justify-between'>
             <div className='text-textAccent'>Available Collateral</div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col items-center gap-2'>
               <div className='text-white'>$500.68</div>
               <Button variant={'feat'} size={'xs'}>
                 Max

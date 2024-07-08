@@ -16,13 +16,14 @@ const Slider = React.forwardRef<
   React.ElementRef<typeof SliderPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>
 >(({ className, ...props }, ref) => {
-  const [value, setValue] = React.useState([0.11]);
+  const [value, setValue] = React.useState([1.1]);
   return (
     <SliderPrimitive.Root
       value={value}
       onValueChange={setValue}
+      min={1}
       max={30}
-      step={0.01}
+      step={0.1}
       ref={ref}
       className={cn(
         'relative mb-12 flex w-full touch-none select-none items-center',
@@ -50,6 +51,4 @@ const Slider = React.forwardRef<
   );
 });
 Slider.displayName = SliderPrimitive.Root.displayName;
-
-// eslint-disable-next-line import/prefer-default-export
 export { Slider };
