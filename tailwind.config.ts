@@ -28,6 +28,8 @@ const config = {
         lightBlue: '#1D97FE',
         btnGreen: '#0ECB81',
         btnRed: '#F6465D',
+        textAccent: '#9CA3AF',
+        borderAccent: '#363A41',
       },
       keyframes: {
         'accordion-down': {
