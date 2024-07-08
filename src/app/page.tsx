@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import TradingViewWidget from '@/components/charts';
 import Container from '@/components/container';
 import PageContainer from '@/components/pageContainer';
@@ -5,11 +7,18 @@ import AuroConnect from '@/hooks/AuroConnect';
 
 import PlaceOrderSection from '@/components/placeOrderSection';
 import SubHeader from '@/components/subHeader';
+import { Separator } from '@/components/ui/separator';
 import { WalletStats } from '@/components/walletStats';
 export default function Home() {
   return (
     <PageContainer>
       <Container>
+        <div className='col-span-12 flex items-center gap-7'>
+          <Image src={'/logo.svg'} width={130} height={35} alt='Trident Logo' />
+          <Separator orientation='vertical' />
+          <p className={`font-semibold text-white`}>Trade</p>
+          <p className={`font-semibold text-accent`}>Pool</p>
+        </div>
         <AuroConnect />
       </Container>
       <main className='flex flex-col gap-4'>
