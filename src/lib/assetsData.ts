@@ -13,8 +13,8 @@ export type CoinData = {
 
 export const coins: Record<string, CoinData> = {
   BTC: {
-    image: '/bitcoin.svg',
-    name: 'BTC_PERP',
+    image: '/minaLogo.svg',
+    name: 'MINA_USDT',
     markPrice: '60,391.00',
     oraclePrice: '57,472.65',
     dayChange: '0.01',
@@ -25,8 +25,8 @@ export const coins: Record<string, CoinData> = {
     borrowingRate: '0.56',
   },
   NTC: {
-    image: '/bitcoin.svg',
-    name: 'BTC_PERP',
+    image: '/minaLogo.svg',
+    name: 'MINA_USDT',
     markPrice: '60,391.00',
     oraclePrice: '57,472.65',
     dayChange: '0.01',
