@@ -17,12 +17,14 @@ const buttonVariants = cva(
           'bg-btnGreen text-primaryForeground  px-8 py-4 rounded-[14px] font-extrabold text-lg',
         red: 'bg-btnRed text-primaryForeground  px-8 py-4 rounded-[14px] font-extrabold text-lg',
         outline:
-          'bg-secondary text-primaryForeground outline-1 outline-offset-0 outline-[#363A41] px-[14px] py-3 rounded-xl font-semibold text-lg shadow-[0px_2px_2px_0px_#00000040]',
+          'bg-secondary text-primaryForeground outline-1 outline-offset-0 outline-textAccent px-[14px] py-3 rounded-xl font-semibold text-lg shadow-[0px_2px_2px_0px_#00000040]',
         link: 'text-primaryForeground font-extrabold underline-offset-4 hover:underline hover:text-white h-0 w-0',
+        feat: 'bg-primary text-primaryForeground px-0 py-0 p-0 rounded-md font-semibold text-[8px] border border-textAccent',
       },
       size: {
         default: 'h-12 px-[18px] py-4',
         lg: 'h-12 w-72',
+        xs: 'p-0 h-6 w-12',
       },
     },
     defaultVariants: {
