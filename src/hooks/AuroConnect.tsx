@@ -1,8 +1,12 @@
 'use client';
 import { useEffect, useState } from 'react';
 
+import { Button } from '@/components/ui/button';
+
+import { useAuth } from './useAuth';
+
 function AuroConnect() {
-  const [account, setAccount] = useState('');
+  const { setIsAuthenticated, setAccount } = useAuth();
   const [network, setNetwork] = useState('');
 
   useEffect(() => {
@@ -19,6 +23,7 @@ function AuroConnect() {
   const handleNewAccounts = (newAccounts: any) => {
     if (Array.isArray(newAccounts) && newAccounts.length > 0) {
       setAccount(newAccounts[0]);
+      setIsAuthenticated(true);
     }
   };
 
@@ -29,6 +34,7 @@ function AuroConnect() {
         .catch((err: any) => err);
       if (!data.message && Array.isArray(data) && data.length > 0) {
         setAccount(data[0]);
+        setIsAuthenticated(true);
       }
     }
   };
@@ -42,15 +48,14 @@ function AuroConnect() {
   };
 
   return (
-    <div className='mr-6'>
-      <button
+    <div>
+      <Button
         onClick={connectAuroWallet}
-        className='border-custom-purple font-good-times rounded-3xl border p-2 text-xs text-gray-200'
+        variant={'default'}
+        className='text-lg font-bold tracking-wide'
       >
-        {account
-          ? account.slice(0, 6) + '...' + account.slice(-6)
-          : 'CONNECT WALLET'}
-      </button>
+        Connect Wallet
+      </Button>
     </div>
   );
 }

@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           'bg-blueGradient text-primaryForeground rounded-2xl font-extrabold h-12 text-lg shadow-[0px_2px_2px_0px_#00000040]',
         secondary:
-          'bg-secondary text-primaryForeground  px-[14px] py-3 rounded-xl font-semibold text-lg shadow-[0px_2px_2px_0px_#00000040]',
+          'bg-secondary text-primaryForeground border border-borderAccent px-[14px] py-3 rounded-xl font-semibold text-lg shadow-[0px_2px_2px_0px_#00000040]',
         green:
           'bg-btnGreen text-primaryForeground  px-8 py-4 rounded-[14px] font-extrabold text-lg',
         red: 'bg-btnRed text-primaryForeground  px-8 py-4 rounded-[14px] font-extrabold text-lg',
